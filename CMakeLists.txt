@@ -17,6 +17,8 @@ target_compile_options(pulp-nn-mixed PRIVATE
   -Wno-pointer-sign
   -Wno-unused-value
   -Wno-int-conversion
+  -Wno-typedef-redefinition
+  -Wno-uninitialized
 )
 
 target_include_directories(pulp-nn-mixed PUBLIC ${PULP_SDK_INCLUDES})
