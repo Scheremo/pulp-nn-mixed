@@ -19,9 +19,6 @@ target_compile_options(pulp-nn-mixed PRIVATE
   -Wno-int-conversion
 )
 
-target_include_directories(pulp-nn-mixed PUBLIC ${PULP_SDK_INCLUDES})
-target_compile_options(pulp-nn-mixed PUBLIC ${PULP_SDK_COMPILE_FLAGS})
-
 if(PULPNNVERSION STREQUAL XPULPV2)
   if(PULPNNBITWIDTH STREQUAL 32)
     set(INCLUDES
